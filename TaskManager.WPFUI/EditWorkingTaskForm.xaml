@@ -1,0 +1,33 @@
+﻿<Window x:Class="TaskManager.WPFUI.EditWorkingTaskForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TaskManager.WPFUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EditWorkingTaskForm">
+
+    <Grid>
+        <!-- Your form fields here -->
+        <StackPanel>
+            <TextBlock Text="Название:"/>
+            <TextBox x:Name="NameTextBox"/>
+            <TextBlock Text="Описание:"/>
+            <TextBox x:Name="DescriptionTextBox"/>
+            <TextBlock Text="Исполнитель:"/>
+            <TextBox x:Name="PerformerTextBox"/>
+            <TextBlock Text="Трудоемкость задачи:"/>
+            <TextBox x:Name="ComplexityTextBox"/>
+            <TextBlock Text="Ожидаемое время выполнения(в часах):"/>
+            <TextBox x:Name="ExecutionTimeTextBox"/>
+            <TextBlock Text="Дата завершения"/>
+            <DatePicker x:Name="FinishTimeDatePicker"/>
+            <TextBlock Text="Статус задачи"/>
+            <ComboBox x:Name="TaskStatusComboBox"/>
+            <!-- Add more fields as needed -->
+            <Button Content="Обновить" Click="UpdateButton_Click" HorizontalAlignment="Center" Margin="10" Name="UpdateButton"/>
+            <Button Content="Удалить" Click="DeleteButton_Click" HorizontalAlignment="Center" Margin="10" Name="DeleteButton"/>
+        </StackPanel>
+    </Grid>
+</Window>
